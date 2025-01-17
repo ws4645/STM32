@@ -13,9 +13,9 @@ extern TIM_HandleTypeDef htim1;
 
 // time1의 duty 변경
 void setDuty(uint8_t duty_r, uint8_t duty_g, uint8_t duty_b){
-	htim1.Instance->CCR1 = (duty_r) * 10;
-	htim1.Instance->CCR2 = (duty_g) * 10;
-	htim1.Instance->CCR3 = (duty_b) * 10;
+	htim1.Instance->CCR1 = (duty_r) * 100;
+	htim1.Instance->CCR2 = (duty_g) * 100;
+	htim1.Instance->CCR3 = (duty_b) * 100;
 }
 
 void app(){
